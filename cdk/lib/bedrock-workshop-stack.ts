@@ -28,8 +28,5 @@ export class BedrockWorkshopStack extends cdk.Stack {
       },
       securityGroups: [securityGroup],
     });
-
-      
-
   }
 }
