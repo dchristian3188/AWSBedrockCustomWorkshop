@@ -25,7 +25,7 @@ print(response)
 print("Granting secrets manager read only to role")
 response = iam.attach_role_policy(
     RoleName=role['RoleName'],
-    PolicyArn='arn:aws:iam::aws:policy/SecretsManagerReadWriteInfo'
+    PolicyArn='arn:aws:iam::aws:policy/SecretsManagerReadWrite'
     )
 print(response)
 
