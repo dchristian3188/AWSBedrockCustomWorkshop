@@ -1,0 +1,17 @@
+services:
+  notebook:
+    image: jupyter/datascience-notebook
+    ports:
+      - 8888:8888
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+  postgres:
+    image: ankane/pgvector
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: bedrockworkshop!
+    ports:
+      - 5432:5432

@@ -14,14 +14,14 @@ Labs include:
 
 
 ## Getting started
-This workshop is ment to be run as part of an AWS event. 
-Once you are logged into your workshop account run the below script in Cloudshell to continue finish the wokshop setup. 
 
-This is a helper repository to bootstrap RDS for the AWS Bedrock Workshop.
+Download the compose.yaml file and save it locally.
+From that directory, run 
 
-    git clone https://github.com/dchristian3188/AWSBedrockCustomWorkshop.git
-    cd AWSBedrockCustomWorkshop
-    sh bootstrap.sh
+    docker-compose up
+
+This will start the juptyer notebook and postgres database. 
+The URL to connect to the lab will be show in the console output. 
 
 
 ### Choose a notebook environment
